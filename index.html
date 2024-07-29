@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cariString(dalamArray, target) {
+            for (let index = 0; index < dalamArray.length; index++) {
+                if (dalamArray[index] === target) {
+                    return true;
+                }
+            }
+            return false
+        }
+
+        console.log(cariString(["apple", "banana", "cherry"], "banana")); // Output: true
+        console.log(cariString(["apple", "banana", "cherry"], "mango")); // Output: false
+    </script>
+</body>
+</html>
